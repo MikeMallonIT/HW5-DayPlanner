@@ -1,92 +1,40 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Homework 5 - Work Day Scheduler - Michael Mallon
 
-## Your Task
+## What I did
+In homework 5, we were provided with HTML and CSS starter code that styled the backbone of the application. Each time-slot div which includes the time, text input and save button were added. Additional CSS formatting was also added to the sections. 
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+<br>
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+### Motivation:
+The latest concept used in this application is the JavaScript moment() function. This allows the application to tell time; something very useful. Motivation on this assignment was to acquire a better understanding of local storage and learn how to trigger evens based off of time.
 
-## User Story
+<br>
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+### Problems I solved:
+    * Used moment() to display the current date
+    * Used moment() to change the way HTML elements are styled
+    * Built HTML elements that input and output text
+    * Used local storage to save and update an array
+    * Manipulated array so elements in array are displayed as calendar events
+<br />
+<br />
 
-## Acceptance Criteria
+## Installation:
+Download all associated files in this repository including the index.html file and all files in the assets folder. Style sheet is located in ../assets/css/style.css, JavaScript is located in ../assets/js/script/js
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+## Usage:
+The website has been deployed and can be accessed publicly by clicking [here](https://mikemallonit.github.io/HW5-DayPlanner/)
 
-The following animation demonstrates the application functionality:
+The website should look like this:
+![Website Screen Shot](./assets/websiteScreenshot.pdf)
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+<br />
 
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-
-
-https://momentjs.com/docs/#/displaying/
+## Credits
+- SMU
+- Trilogy Education Services
+- [Mozilla](https://developer.mozilla.org)
+- [Emojipedia](https://emojipedia.org/)
+- [W3 Schools](https://www.w3schools.com/)
+- [W3.org](https://www.w3.org/)
+- [Stack Overflow](https://stackoverflow.com)

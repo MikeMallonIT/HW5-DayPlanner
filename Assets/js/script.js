@@ -41,7 +41,7 @@ var textFive = document.getElementById("fiveInput");
 $("#currentDay").text(today.format("dddd, MMMM Do"));
 
 //Determine what hour in the day it is
-var todayHourString = today.format("hh")
+var todayHourString = today.format("HH")
 var todayHour = parseInt(todayHourString);
 
 //Runs all of the row format functions
@@ -294,15 +294,12 @@ function save(data){
 //Load the stored appointements
 function load(){
 
-    console.log("Test the load function");
-
     var theSchedule = JSON.parse(localStorage.getItem("calendar")) || [];
 
 
     for(let i=0; i<9; i++){
 
     localSchedule[i] = theSchedule[i];
-    console.log("local sched",localSchedule[i]);
     }
 
     if ( localSchedule[0] ){

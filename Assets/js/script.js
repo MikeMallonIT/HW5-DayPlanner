@@ -44,8 +44,6 @@ $("#currentDay").text(today.format("dddd, MMMM Do"));
 var todayHourString = today.format("hh")
 var todayHour = parseInt(todayHourString);
 
-console.log("Today Hour: ", (todayHour));
-
 //Runs all of the row format functions
 function formatTime(){
     formatNine();
@@ -180,7 +178,7 @@ function formatFive(){
     } 
 }
 
-
+//Save button functiont that will update the global array with what has been added then push that global array to local storage
 nineSaveButtonClick.addEventListener("click", function(){
 
     console.log("Test9 save buttons");
@@ -285,8 +283,7 @@ fiveSaveButtonClick.addEventListener("click", function(){
 
 });
 
-
-
+//Save the new version of the local schedule
 function save(data){
     var array = JSON.parse(localStorage.getItem("calendar")) || [];
     array = data;
@@ -294,8 +291,7 @@ function save(data){
     localStorage.setItem("calendar", JSON.stringify(array));
 }
 
-
-
+//Load the stored appointements
 function load(){
 
     console.log("Test the load function");
@@ -338,6 +334,8 @@ function load(){
     }
 }
 
-
+//Format time on start
 formatTime();
+
+//Load schedule from local storage
 load();

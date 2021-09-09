@@ -23,6 +23,7 @@
   </head>
 
   <body>
+    <!-- Header Jumbotron with current date -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -30,56 +31,64 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+
+      <!-- 9AM time block -->
       <div class="row" id="nine">
         <div class="timeText">9 AM</div>
         <input type="text" class="input nineInput" id="nineInput" value="">
         <button class="saveBtn" id="nineSave">💾</button>
       </div>
 
+      <!-- 10AM time block -->
       <div class="row" id="ten">
         <div class="timeText">10 AM</div>
         <input type="text" class="input tenInput" id="tenInput" value="">
         <button class="saveBtn" id="tenSave">💾</button>
       </div>
 
+      <!-- 11AM time block -->
       <div class="row" id="eleven">
         <div class="timeText">11 AM</div>
         <input type="text" class="input elevenInput" id="elevenInput" value="">
         <button class="saveBtn" id="elevenSave">💾</button>
       </div>
 
-
+      <!-- Noon time block -->
       <div class="row" id="noon">
         <div class="timeText">12 PM</div>
         <input type="text" class="input noonInput" id="noonInput" value="">
         <button class="saveBtn" id="noonSave">💾</button>
       </div>
 
-
+      <!-- 1PM time block -->
       <div class="row" id="one">
         <div class="timeText">1 PM</div>
         <input type="text" class="input oneInput" id="oneInput" value="">
         <button class="saveBtn" id="oneSave">💾</button>
       </div>
 
+      <!-- 2PM time block -->
       <div class="row" id="two">
         <div class="timeText">2 PM</div>
         <input type="text" class="input twoInput" id="twoInput" value="">
         <button class="saveBtn" id="twoSave">💾</button>
       </div>
 
+      <!-- 3PM time block -->
       <div class="row" id="three">
         <div class="timeText">3 PM</div>
         <input type="text" class="input threeInput" id="threeInput" value="">
         <button class="saveBtn" id="threeSave">💾</button>
       </div>
 
+      <!-- 4PM time block -->
       <div class="row" id="four">
         <div class="timeText">4 PM</div>
         <input type="text" class="input fourInput" id="fourInput" value="">
         <button class="saveBtn" id="fourSave">💾</button>
       </div>
 
+      <!-- 5PM time block -->
       <div class="row" id="five">
         <div class="timeText">5 PM</div>
         <input type="text" class="input fiveInput" id="fiveInput" value="">
@@ -87,6 +96,8 @@
       </div>
 
     </div>
+
+    <!-- References to local and pubmic JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./Assets/js/script.js"></script>
